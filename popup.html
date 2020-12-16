@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+MEET ATTENDANCE
+</title>
+<style>
+body{
+	background-color: yellow;
+	display:grid;
+	grid-template-areas:
+	'h h h'
+	'b b b'
+	's s s';
+	width:auto;
+	height:110px;
+}
+h3{
+	font-family: Cursive;
+	grid-area:h;
+}
+button:hover{
+	color:white;
+	background-color: red;
+}
+.btn{
+	display:flex;
+	justify-content:row;
+	grid-area:b;
+}
+button{
+	margin-inline:5px;
+}
+p{
+	grid-area:s;
+	font-family: Cursive;
+}
+</style>
+</head>
+<body>
+<h3>MEET ATTENDANCE</h3>
+<div class="btn">
+<button id="record">record</button>
+<button id="copy">copy</button>
+</div>
+<p id="status"></p>
+<script src="popup.js"></script>
+</body>
+</html>
