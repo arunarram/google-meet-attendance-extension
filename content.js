@@ -5,10 +5,17 @@ var list=[];
 function gotMessage(message,sender,sendResponse){
    	console.log(message.txt);
 	if(message.txt==="record"){
-		var roll=document.getElementsByClassName("ZjFb7c");
-		for(elt of roll){
-			list.push(elt.innerHTML);
-		}
+		document.querySelector(".NzPR9b").firstChild.click();
+		document.querySelector(".LdTVNd").click();
+		document.querySelector(".GvcuGe").scrollIntoView(true);
+		setTimeout(function() {
+			//your code to be executed after 1 second
+			var roll=document.getElementsByClassName("ZjFb7c");
+			for(elt of roll){
+				elt.scrollIntoView({behavior: "smooth", block: "nearest"});
+				list.push(elt.innerHTML);
+			}
+		}, 500);
 	}
 	if(message.txt==="copy"){
 		var newlist=[...new Set(list)].sort(function(a,b) {
