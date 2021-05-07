@@ -26,30 +26,6 @@
 
 ### how to use
 
-1. open members menu in the google meet(while on a meet)
 
-  <img width="375" alt="peopleButton" src="https://user-images.githubusercontent.com/69054617/114009095-7882b580-9880-11eb-92d6-c1c5fa69daef.PNG">
-
-
-2. click the extension
-
-  <img width="269" alt="Click the Extension" src="https://user-images.githubusercontent.com/69054617/114009124-80425a00-9880-11eb-80f9-51d79323a6a2.PNG">
-
-  
-3. Press record button to record the attendance at that moment
-  
-  <img width="269" alt="Click Record" src="https://user-images.githubusercontent.com/69054617/114009142-86383b00-9880-11eb-8665-10f7b00079a6.PNG">
-
-  
-4. press copy button and ok for the Total Attendance alert to copy the attendance to the windows clipboard which were recorded until now
-  
-  <img width="271" alt="Click Copy" src="https://user-images.githubusercontent.com/69054617/114009204-9223fd00-9880-11eb-8ba6-d155af2799bc.PNG">
-
-  <img width="346" alt="total Attendance Alert" src="https://user-images.githubusercontent.com/69054617/114009236-9819de00-9880-11eb-9ece-f56f222be054.PNG">
-
-
-5. Now the attendance can be pasted any where (Here it is pasted in a text file by using `CTRL+V` command)
-  
-  <img width="335" alt="pasted in notepad" src="https://user-images.githubusercontent.com/69054617/114009303-a667fa00-9880-11eb-8c17-e957668dd5af.PNG">
-
-  
+<video src="https://user-images.githubusercontent.com/69054617/117410698-656f0e00-af30-11eb-940e-432c4a949c9e.mp4">
+</video>
