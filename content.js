@@ -1,21 +1,27 @@
-console.log("HI");
+console.log("Welcome");
 
 chrome.runtime.onMessage.addListener(gotMessage);
 var list=[];
 function gotMessage(message,sender,sendResponse){
    	console.log(message.txt);
 	if(message.txt==="record"){
-		document.querySelector(".NzPR9b").firstChild.click();
-		document.querySelector(".LdTVNd").click();
-		document.querySelector(".GvcuGe").scrollIntoView(true);
-		setTimeout(function() {
+		if(document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(9) > div.crqnQb > div.R3Gmyc.qwU8Me > div.WUFI9b > div.CYZUZd > div.VUk8eb > div > span > button")==null){
+			document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(9) > div.crqnQb > div.rG0ybd.xPh1xb.P9KVBf.LCXT6 > div.TqwH9c > div.SZfyod > div > div > div:nth-child(2) > span > button").click();
+		}
+		else{
+			document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(9) > div.crqnQb > div.R3Gmyc.qwU8Me > div.WUFI9b > div.CYZUZd > div.VUk8eb > div > span > button").click();
+			setTimeout(()=>{
+				document.querySelector("#ow3 > div.T4LgNb > div > div:nth-child(9) > div.crqnQb > div.rG0ybd.xPh1xb.P9KVBf.LCXT6 > div.TqwH9c > div.SZfyod > div > div > div:nth-child(2) > span > button").click()
+			},500);
+		}
+
 			//your code to be executed after 1 second
+		setTimeout(()=>{
 			var roll=document.getElementsByClassName("ZjFb7c");
 			for(elt of roll){
-				elt.scrollIntoView({behavior: "smooth", block: "nearest"});
 				list.push(elt.innerHTML);
 			}
-		}, 500);
+		},500);
 	}
 	if(message.txt==="copy"){
 		var newlist=[...new Set(list)].sort(function(a,b) {
